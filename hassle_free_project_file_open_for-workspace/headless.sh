@@ -5,6 +5,7 @@ USER="/media/aasourav/Local Folder/headless/engaze/engaze-user"
 MONOREPO="/media/aasourav/Local Folder/headless/engaze/engaze-ui-monorepo"
 SERVER="/media/aasourav/Local Folder/headless/engaze/engaze-server"
 ORDERS_APP="/media/aasourav/Local Folder/headless/engaze/engaze-orders-app"
+HEADLESS_BLOG="/media/aasourav/Local Folder/headless/headless-blogs"
 
 # Function to open folder in Visual Studio Code
 open_folder() {
@@ -39,7 +40,8 @@ while true; do
     echo "2. MONOREPO"
     echo "3. SERVER"
     echo "4. ORDERS APP"
-    echo "5. Exit"
+    echo "5. HEADLESS_BLOG"
+    echo "6. Exit"
 
     # Read user input
     read -p "Enter your choice (1/2/3/4/5): " choice
@@ -63,6 +65,10 @@ while true; do
             open_terminal "$ORDERS_APP"
             ;;
         5)
+            open_folder "$HEADLESS_BLOG"
+            open_terminal "$HEADLESS_BLOG"
+            ;;
+        6)
             echo "Exiting..."
             break
             ;;
