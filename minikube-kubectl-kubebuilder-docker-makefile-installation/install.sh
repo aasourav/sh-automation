@@ -28,9 +28,9 @@ kubectl version --client
 #go
 #==========================
 cd ~
-curl -OL https://go.dev/dl/go1.22.0.linux-386.tar.gz
-sha256 go1.22.0.linux-386.tar.gz
-sudo tar -C /usr/local -xvf go1.22.0.linux-386.tar.gz
+curl -OL https://go.dev/dl/go1.22.0.linux-amd64.tar.gz
+sha256sum go1.22.0.linux-amd64.tar.gz
+sudo tar -C /usr/local -xvf go1.22.0.linux-amd64.tar.gz
 sudo echo "PATH=$PATH:/usr/local/go/bin" >> ~/.profile
 source ~/.profile
 go version
